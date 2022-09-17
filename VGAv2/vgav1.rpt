@@ -1,0 +1,42 @@
+
+icetime topological timing analysis report
+==========================================
+
+Info: max_span_hack is enabled: estimate is conservative.
+
+Report for critical path:
+-------------------------
+
+        lc40_10_29_7 (LogicCell40) [clk] -> lcout: 1.491 ns
+     1.491 ns net_40907 (hsync.hcount[7])
+        t65 (LocalMux) I -> O: 1.099 ns
+        inmux_10_30_44902_44958 (InMux) I -> O: 0.662 ns
+        lc40_10_30_5 (LogicCell40) in0 -> lcout: 1.285 ns
+     4.537 ns net_41028 (hsync.h_sync_SB_DFFESS_Q_E_SB_LUT4_O_1_I3[1])
+        t72 (LocalMux) I -> O: 1.099 ns
+        inmux_10_30_44908_44940 (InMux) I -> O: 0.662 ns
+        lc40_10_30_2 (LogicCell40) in0 -> lcout: 1.285 ns
+     7.583 ns net_41025 (hsync.h_sync_SB_DFFESS_Q_E[1])
+        t68 (LocalMux) I -> O: 1.099 ns
+        inmux_11_29_48629_48656 (InMux) I -> O: 0.662 ns
+        t19 (CascadeMux) I -> O: 0.000 ns
+        lc40_11_29_3 (LogicCell40) in2 -> lcout: 1.205 ns
+    10.550 ns net_44734 (hsync.h528_SB_DFFESR_Q_R)
+        odrv_11_29_44734_44516 (Odrv4) I -> O: 0.649 ns
+        t93 (Span4Mux_h4) I -> O: 0.543 ns
+        t92 (LocalMux) I -> O: 1.099 ns
+        inmux_12_29_52447_52515 (SRMux) I -> O: 0.636 ns
+    13.477 ns net_52515 (hsync.h528_SB_DFFESR_Q_R)
+        lc40_12_29_0 (LogicCell40) sr [setup]: 0.384 ns
+    13.861 ns net_48562 (hreset)
+
+Resolvable net names on path:
+     1.491 ns ..  3.252 ns hsync.hcount[7]
+     4.537 ns ..  6.298 ns hsync.h_sync_SB_DFFESS_Q_E_SB_LUT4_O_1_I3[1]
+     7.583 ns ..  9.345 ns hsync.h_sync_SB_DFFESS_Q_E[1]
+    10.550 ns .. 13.477 ns hsync.h528_SB_DFFESR_Q_R
+                  lcout -> hreset
+
+Total number of logic levels: 4
+Total path delay: 13.86 ns (72.14 MHz)
+

@@ -1,0 +1,52 @@
+
+icetime topological timing analysis report
+==========================================
+
+Info: max_span_hack is enabled: estimate is conservative.
+
+Report for critical path:
+-------------------------
+
+        lc40_5_16_4 (LogicCell40) [clk] -> lcout: 1.491 ns
+     1.491 ns net_20781 (rom.mem.0.0_RDATA[3])
+        odrv_5_16_20781_24394 (Odrv4) I -> O: 0.649 ns
+        t796 (Span4Mux_h4) I -> O: 0.543 ns
+        t795 (Span4Mux_h4) I -> O: 0.543 ns
+        t794 (Span4Mux_h4) I -> O: 0.543 ns
+        t793 (Span4Mux_v4) I -> O: 0.649 ns
+        t792 (Span4Mux_v4) I -> O: 0.649 ns
+        t791 (LocalMux) I -> O: 1.099 ns
+        inmux_18_7_72721_72757 (InMux) I -> O: 0.662 ns
+        lc40_18_7_2 (LogicCell40) in0 -> lcout: 1.285 ns
+     8.113 ns net_68842 (rom.mem.0.4_RDATA_2_SB_LUT4_I0_O[1])
+        odrv_18_7_68842_68749 (Odrv4) I -> O: 0.649 ns
+        t1735 (Span4Mux_v4) I -> O: 0.649 ns
+        t1734 (LocalMux) I -> O: 1.099 ns
+        inmux_18_11_73209_73279 (InMux) I -> O: 0.662 ns
+        lc40_18_11_7 (LogicCell40) in0 -> lcout: 1.285 ns
+    12.457 ns net_69339 (g0_SB_LUT4_O_I0[3])
+        odrv_18_11_69339_72681 (Odrv12) I -> O: 1.232 ns
+        t1739 (LocalMux) I -> O: 1.099 ns
+        inmux_18_17_73960_74011 (InMux) I -> O: 0.662 ns
+        lc40_18_17_6 (LogicCell40) in0 -> lcout: 1.285 ns
+    16.735 ns net_70076 (g0$SB_IO_OUT)
+        odrv_18_17_70076_70206 (Odrv4) I -> O: 0.649 ns
+        t1748 (Span4Mux_v4) I -> O: 0.649 ns
+        t1747 (Span4Mux_v4) I -> O: 0.649 ns
+        t1746 (Span4Mux_v4) I -> O: 0.649 ns
+        t1745 (Span4Mux_v4) I -> O: 0.649 ns
+        t1744 (LocalMux) I -> O: 1.099 ns
+        inmux_17_31_71857_71837 (IoInMux) I -> O: 0.662 ns
+    21.742 ns net_71837 (g0$SB_IO_OUT)
+        pre_io_17_31_0 (PRE_IO) DOUT0 [setup]: 0.187 ns
+    21.928 ns io_pad_17_31_0_din
+
+Resolvable net names on path:
+     1.491 ns ..  6.828 ns rom.mem.0.0_RDATA[3]
+     8.113 ns .. 11.172 ns rom.mem.0.4_RDATA_2_SB_LUT4_I0_O[1]
+    12.457 ns .. 15.450 ns g0_SB_LUT4_O_I0[3]
+    16.735 ns .. 21.742 ns g0$SB_IO_OUT
+
+Total number of logic levels: 4
+Total path delay: 21.93 ns (45.60 MHz)
+
